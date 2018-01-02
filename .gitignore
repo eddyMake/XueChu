@@ -1,0 +1,22 @@
+# OS X
+.DS_Store
+XueChu/.DS_Store
+
+# *.xccheckout
+学厨B/XueChu.xcodeproj/project.xcworkspace/xcuserdata/*.xcuserdatad/*
+
+# Dir
+XueChu/Pods/
+XueChu/IPA/
+XueChu/build/
+
+*.xcarchive
+builds/*
+.history
+
+# Xcode
+#
+build/
+DerivedData/
+xcuserdata/
+*contents.xcworkspacedata
