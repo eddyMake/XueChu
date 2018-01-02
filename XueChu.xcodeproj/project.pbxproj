@@ -16,6 +16,11 @@
 		6439808B1FFB6789000B0EB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6439808A1FFB6789000B0EB3 /* main.m */; };
 		643980951FFB6789000B0EB3 /* XueChuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 643980941FFB6789000B0EB3 /* XueChuTests.m */; };
 		643980A01FFB6789000B0EB3 /* XueChuUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6439809F1FFB6789000B0EB3 /* XueChuUITests.m */; };
+		64EF422B1FFB928600AAB7E1 /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64EF422A1FFB928600AAB7E1 /* BaseController.m */; };
+		64EF422E1FFB933500AAB7E1 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64EF422D1FFB933500AAB7E1 /* BaseNavigationController.m */; };
+		64EF42311FFB933F00AAB7E1 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64EF42301FFB933F00AAB7E1 /* BaseView.m */; };
+		64EF42341FFB935500AAB7E1 /* BaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64EF42331FFB935500AAB7E1 /* BaseTableView.m */; };
+		64EF423A1FFB939A00AAB7E1 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 64EF42391FFB939A00AAB7E1 /* BaseTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,16 @@
 		6439809B1FFB6789000B0EB3 /* XueChuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XueChuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6439809F1FFB6789000B0EB3 /* XueChuUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XueChuUITests.m; sourceTree = "<group>"; };
 		643980A11FFB6789000B0EB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64EF42291FFB928600AAB7E1 /* BaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseController.h; sourceTree = "<group>"; };
+		64EF422A1FFB928600AAB7E1 /* BaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseController.m; sourceTree = "<group>"; };
+		64EF422C1FFB933500AAB7E1 /* BaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		64EF422D1FFB933500AAB7E1 /* BaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		64EF422F1FFB933F00AAB7E1 /* BaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
+		64EF42301FFB933F00AAB7E1 /* BaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
+		64EF42321FFB935500AAB7E1 /* BaseTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableView.h; sourceTree = "<group>"; };
+		64EF42331FFB935500AAB7E1 /* BaseTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableView.m; sourceTree = "<group>"; };
+		64EF42381FFB939A00AAB7E1 /* BaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
+		64EF42391FFB939A00AAB7E1 /* BaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
 		845964F6A271315D7718F4B3 /* Pods_XueChu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XueChu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E83CE7BAB80B7B2FE7DD94E8 /* Pods-XueChu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XueChu.release.xcconfig"; path = "Pods/Target Support Files/Pods-XueChu/Pods-XueChu.release.xcconfig"; sourceTree = "<group>"; };
 		F6CA28C57F01E3BA268150C1 /* Pods-XueChu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XueChu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XueChu/Pods-XueChu.debug.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +104,10 @@
 				64173F1C1FFB6AE800DA388E /* AppDelegate.m */,
 				64EF42271FFB89D700AAB7E1 /* Base */,
 				64173F1D1FFB6AE800DA388E /* CommonModule */,
+				64EF423F1FFB946F00AAB7E1 /* Category */,
+				64EF42431FFB946F00AAB7E1 /* CookBook */,
+				64EF42471FFB946F00AAB7E1 /* Find */,
+				64EF423B1FFB946E00AAB7E1 /* Mine */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -182,6 +201,16 @@
 		64EF42271FFB89D700AAB7E1 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				64EF42291FFB928600AAB7E1 /* BaseController.h */,
+				64EF422A1FFB928600AAB7E1 /* BaseController.m */,
+				64EF422C1FFB933500AAB7E1 /* BaseNavigationController.h */,
+				64EF422D1FFB933500AAB7E1 /* BaseNavigationController.m */,
+				64EF422F1FFB933F00AAB7E1 /* BaseView.h */,
+				64EF42301FFB933F00AAB7E1 /* BaseView.m */,
+				64EF42321FFB935500AAB7E1 /* BaseTableView.h */,
+				64EF42331FFB935500AAB7E1 /* BaseTableView.m */,
+				64EF42381FFB939A00AAB7E1 /* BaseTableViewCell.h */,
+				64EF42391FFB939A00AAB7E1 /* BaseTableViewCell.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -191,6 +220,130 @@
 			children = (
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		64EF423B1FFB946E00AAB7E1 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				64EF423C1FFB946E00AAB7E1 /* Controller */,
+				64EF423D1FFB946E00AAB7E1 /* Model */,
+				64EF423E1FFB946E00AAB7E1 /* View */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		64EF423C1FFB946E00AAB7E1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		64EF423D1FFB946E00AAB7E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		64EF423E1FFB946E00AAB7E1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		64EF423F1FFB946F00AAB7E1 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				64EF42401FFB946F00AAB7E1 /* Controller */,
+				64EF42411FFB946F00AAB7E1 /* Model */,
+				64EF42421FFB946F00AAB7E1 /* View */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		64EF42401FFB946F00AAB7E1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		64EF42411FFB946F00AAB7E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		64EF42421FFB946F00AAB7E1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		64EF42431FFB946F00AAB7E1 /* CookBook */ = {
+			isa = PBXGroup;
+			children = (
+				64EF42441FFB946F00AAB7E1 /* Controller */,
+				64EF42451FFB946F00AAB7E1 /* Model */,
+				64EF42461FFB946F00AAB7E1 /* View */,
+			);
+			path = CookBook;
+			sourceTree = "<group>";
+		};
+		64EF42441FFB946F00AAB7E1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		64EF42451FFB946F00AAB7E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		64EF42461FFB946F00AAB7E1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		64EF42471FFB946F00AAB7E1 /* Find */ = {
+			isa = PBXGroup;
+			children = (
+				64EF42481FFB946F00AAB7E1 /* Controller */,
+				64EF42491FFB946F00AAB7E1 /* Model */,
+				64EF424A1FFB946F00AAB7E1 /* View */,
+			);
+			path = Find;
+			sourceTree = "<group>";
+		};
+		64EF42481FFB946F00AAB7E1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		64EF42491FFB946F00AAB7E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		64EF424A1FFB946F00AAB7E1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		6744D555C818A50A1E7AACB4 /* Pods */ = {
@@ -413,7 +566,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64EF42341FFB935500AAB7E1 /* BaseTableView.m in Sources */,
+				64EF422E1FFB933500AAB7E1 /* BaseNavigationController.m in Sources */,
 				64173F1E1FFB6AE800DA388E /* AppDelegate.m in Sources */,
+				64EF42311FFB933F00AAB7E1 /* BaseView.m in Sources */,
+				64EF422B1FFB928600AAB7E1 /* BaseController.m in Sources */,
+				64EF423A1FFB939A00AAB7E1 /* BaseTableViewCell.m in Sources */,
 				6439808B1FFB6789000B0EB3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
