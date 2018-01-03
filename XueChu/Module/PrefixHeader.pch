@@ -18,6 +18,7 @@
 
 #import "UIKit+Extra.h"
 #import "Foundation+Extra.h"
+#import "CommonUtility.h"
 
 #import "Global.h"
 #import "API.h"

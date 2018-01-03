@@ -22,4 +22,22 @@
 #define isScreen4_7Inch ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(kScreen4_7InchSize, [[UIScreen mainScreen] currentMode].size) : NO)
 #define isScreen5_5Inch ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(kScreen5_5InchSize, [[UIScreen mainScreen] currentMode].size) : NO)
 
+// 日志输出
+#ifdef DEBUG
+#   define BLTLog(fmt, ...) {NSLog((@"[Line %d] " fmt), __LINE__, ##__VA_ARGS__);}
+#else
+#   define BLTLog(...)
+#endif
+
+#define strongify(...) \
+rac_keywordify \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Wshadow\"") \
+metamacro_foreach(rac_strongify_,, __VA_ARGS__) \
+_Pragma("clang diagnostic pop")
+
+#define weakify(...) \
+rac_keywordify \
+metamacro_foreach_cxt(rac_weakify_,, __weak, __VA_ARGS__)
+
 #endif /* Global_h */
