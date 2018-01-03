@@ -8,7 +8,8 @@ target ‘XueChu’ do
    pod 'MBProgressHUD'
    pod 'IQKeyboardManager'
    pod 'UITableView+FDTemplateLayoutCell'
-   
+   pod 'RDVTabBarController'
+
     #网络
    pod 'AFNetworking'
    pod 'SDWebImage'
