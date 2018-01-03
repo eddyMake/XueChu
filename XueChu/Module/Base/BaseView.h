@@ -10,4 +10,6 @@
 
 @interface BaseView : UIView
 
+- (void)setUpUserInterface;
+
 @end

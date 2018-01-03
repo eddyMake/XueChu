@@ -21,7 +21,6 @@
 @property (nonatomic, strong) UIView *mainContentView;
 
 
-
 /**
  *  是否显示导航栏，默认YES显示导航栏，如果不显示导航栏，则在子类中重写
  *
@@ -65,6 +64,7 @@
 - (UIView *)customMainContentView;
 
 
+- (void)setUpUserInterface;
 /**
  *  导航栏左侧显示返回按钮
  */

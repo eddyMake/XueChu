@@ -29,6 +29,11 @@
 #   define BLTLog(...)
 #endif
 
+//屏幕缩放
+//以iphone6为参考，如果不是iphone作为参考，则要改变值
+#define XSScreenScaleX(x) x*[UIScreen mainScreen].bounds.size.width/375.0
+#define XSScreenScaleY(y) y*[UIScreen mainScreen].bounds.size.height/667.0
+
 #define strongify(...) \
 rac_keywordify \
 _Pragma("clang diagnostic push") \

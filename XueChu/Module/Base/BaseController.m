@@ -71,10 +71,6 @@ const CGFloat kTabBarheight        = 49.0;
     {
         bgHeight = -(stateBarHeight + navbarHeight);
     }
-    else
-    {
-        bgHeight = -stateBarHeight;
-    }
     
     CGRect rect = scr.bounds;
     
@@ -86,7 +82,6 @@ const CGFloat kTabBarheight        = 49.0;
     [self.view addSubview:_backgroundImgView];
     [self.view sendSubviewToBack:_backgroundImgView];
 }
-
 
 #pragma mark - 适配不同寸屏的代码
 
@@ -137,7 +132,6 @@ const CGFloat kTabBarheight        = 49.0;
  */
 - (UIImage *)customBackgroundImage
 {
-    //    return [UIImage imageWithAutoMatchCurDevice:@"common_bg" extName:@"png"];
     return nil;
 }
 
@@ -151,6 +145,8 @@ const CGFloat kTabBarheight        = 49.0;
     return nil;
 }
 
+- (void)setUpUserInterface
+{}
 
 #pragma mark - init
 
@@ -289,8 +285,6 @@ const CGFloat kTabBarheight        = 49.0;
     return _titleLabel;
 }
 
-
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -300,13 +294,13 @@ const CGFloat kTabBarheight        = 49.0;
 - (void)dealloc
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+    
+    BLTLog(@"%@~~~~~~~~~~~~~~~~~~dealloc~~",[self class]);
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
-    
 }
 
 - (void)viewDidAppear:(BOOL)animated

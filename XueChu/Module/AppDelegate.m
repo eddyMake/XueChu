@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "CustomTaBarController.h"
+#import "BaseNavigationController.h"
+#import "LoginController.h"
 
 @interface AppDelegate ()
 
@@ -24,16 +26,25 @@
     
     NSLog(@"%@",SERVER_DATA_B);
     
-    [self setUpRootController];
+    [self setUpRootControllerWithIsTaBarController:NO];
     
     return YES;
 }
 
-- (void)setUpRootController
+- (void)setUpRootControllerWithIsTaBarController:(BOOL)isTaBarController
 {
-    CustomTaBarController *rootController = [[CustomTaBarController alloc] init];
-    
-    [self.window setRootViewController:rootController];
+    if (isTaBarController)
+    {
+        CustomTaBarController *rootController = [[CustomTaBarController alloc] init];
+        
+        [self.window setRootViewController:rootController];
+    }
+    else
+    {
+        BaseNavigationController *rootController = [[BaseNavigationController alloc] initWithRootViewController:[[LoginController alloc] init]];
+        
+        [self.window setRootViewController:rootController];
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

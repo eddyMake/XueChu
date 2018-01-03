@@ -62,8 +62,8 @@
     
     
     //tabBarItem
-    NSArray *tabBarItemNormalImages = @[@"ic_recipes", @"ic_classify", @"ic_find_e", @"ic_mine"];
-    NSArray *tabBarItemSelectedImages = @[@"ic_recipes_v", @"ic_classify_v", @"ic_find", @"ic_mine-e"];
+    NSArray *tabBarItemNormalImages = @[@"ic_home", @"ic_activity", @"ic_find", @"ic_mine"];
+    NSArray *tabBarItemSelectedImages = @[@"ic_home_v", @"ic_activity_v", @"ic_find_v", @"ic_mine_v"];
     NSArray *tabBarItemTitles = @[@"食谱",@"分类",@"发现",@"我的"];
     NSInteger index = 0;
     

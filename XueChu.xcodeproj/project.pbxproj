@@ -17,6 +17,8 @@
 		643980951FFB6789000B0EB3 /* XueChuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 643980941FFB6789000B0EB3 /* XueChuTests.m */; };
 		643980A01FFB6789000B0EB3 /* XueChuUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6439809F1FFB6789000B0EB3 /* XueChuUITests.m */; };
 		64789ECA1FFCA69D007B6FF6 /* NetWorkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 64789EC91FFCA69D007B6FF6 /* NetWorkEngine.m */; };
+		64789ECD1FFCAB56007B6FF6 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64789ECC1FFCAB56007B6FF6 /* LoginController.m */; };
+		64789ED01FFCAE24007B6FF6 /* LoginMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64789ECF1FFCAE24007B6FF6 /* LoginMainView.m */; };
 		64CAAF261FFC68CE0084DE0B /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64CAAF251FFC68CD0084DE0B /* BaseNavigationController.m */; };
 		64CAAF291FFC6A640084DE0B /* CustomTaBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64CAAF281FFC6A640084DE0B /* CustomTaBarController.m */; };
 		64CAAF2C1FFC6A9A0084DE0B /* CookBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64CAAF2B1FFC6A9A0084DE0B /* CookBookController.m */; };
@@ -77,6 +79,10 @@
 		64789EC71FFCA68D007B6FF6 /* CommonUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUtility.h; sourceTree = "<group>"; };
 		64789EC81FFCA69D007B6FF6 /* NetWorkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkEngine.h; sourceTree = "<group>"; };
 		64789EC91FFCA69D007B6FF6 /* NetWorkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkEngine.m; sourceTree = "<group>"; };
+		64789ECB1FFCAB56007B6FF6 /* LoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
+		64789ECC1FFCAB56007B6FF6 /* LoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
+		64789ECE1FFCAE24007B6FF6 /* LoginMainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginMainView.h; sourceTree = "<group>"; };
+		64789ECF1FFCAE24007B6FF6 /* LoginMainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginMainView.m; sourceTree = "<group>"; };
 		64CAAF221FFC64840084DE0B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		64CAAF241FFC68CD0084DE0B /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		64CAAF251FFC68CD0084DE0B /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
@@ -189,6 +195,8 @@
 		64173F1F1FFB6B1F00DA388E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				64789ECE1FFCAE24007B6FF6 /* LoginMainView.h */,
+				64789ECF1FFCAE24007B6FF6 /* LoginMainView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -196,6 +204,8 @@
 		64173F201FFB6B1F00DA388E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				64789ECB1FFCAB56007B6FF6 /* LoginController.h */,
+				64789ECC1FFCAB56007B6FF6 /* LoginController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -717,6 +727,7 @@
 				64CAAF5F1FFC79310084DE0B /* NotificationNameDefine.m in Sources */,
 				64CAAF651FFC79310084DE0B /* UIImage+Extra.m in Sources */,
 				64CAAF321FFC6AB40084DE0B /* MineController.m in Sources */,
+				64789ED01FFCAE24007B6FF6 /* LoginMainView.m in Sources */,
 				64CAAF5B1FFC79310084DE0B /* NSDate+Extra.m in Sources */,
 				64CAAF601FFC79310084DE0B /* NSString+Util.m in Sources */,
 				64CAAF5D1FFC79310084DE0B /* NSString+Extra.m in Sources */,
@@ -733,6 +744,7 @@
 				64EF422B1FFB928600AAB7E1 /* BaseController.m in Sources */,
 				64CAAF641FFC79310084DE0B /* UIColor+Extra.m in Sources */,
 				64CAAF6E1FFC7B000084DE0B /* BaseModel.m in Sources */,
+				64789ECD1FFCAB56007B6FF6 /* LoginController.m in Sources */,
 				64CAAF5A1FFC79310084DE0B /* CustomTextAttachment.m in Sources */,
 				64CAAF5C1FFC79310084DE0B /* NSDictionary+Extra.m in Sources */,
 				64EF423A1FFB939A00AAB7E1 /* BaseTableViewCell.m in Sources */,
