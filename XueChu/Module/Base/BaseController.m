@@ -271,12 +271,17 @@ const CGFloat kTabBarheight        = 49.0;
     self.titleLabel.text = title;
 }
 
+- (void)setNavTitleColor:(UIColor *)navTitleColor
+{
+    [self.titleLabel setTextColor:navTitleColor];
+}
+
 - (UILabel *)titleLabel
 {
     if (_titleLabel == nil)
     {
         _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 120, 40)];
-        _titleLabel.font = [UIFont boldSystemFontOfSize:16];
+        _titleLabel.font = [UIFont boldSystemFontOfSize:17];
         _titleLabel.textColor = [UIColor whiteColor];
         _titleLabel.textAlignment = NSTextAlignmentCenter;
         _titleLabel.backgroundColor = [UIColor clearColor];
@@ -378,8 +383,8 @@ const CGFloat kTabBarheight        = 49.0;
 {
     // 导航栏的左边按钮
     UIButton *leftButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
-    [leftButton setBackgroundImage:[UIImage imageNamed:@"icn_back"] forState:UIControlStateNormal];
-    [leftButton setBackgroundImage:[UIImage imageNamed:@"icn_back"] forState:UIControlStateHighlighted];
+    [leftButton setImage:[UIImage imageNamed:@"nav_back"] forState:UIControlStateNormal];
+    [leftButton setImage:[UIImage imageNamed:@"nav_back"] forState:UIControlStateHighlighted];
     [leftButton addTarget:self action:@selector(onNavigationLeftButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *barBack = [[UIBarButtonItem alloc]initWithCustomView:leftButton];
     
@@ -387,7 +392,7 @@ const CGFloat kTabBarheight        = 49.0;
                                                                                     target:nil
                                                                                     action:nil];
     
-    negativeSpacer.width = - 16;
+    negativeSpacer.width = -50;
     
     self.navigationItem.leftBarButtonItems = [NSArray arrayWithObjects:negativeSpacer,barBack,nil];
 }
@@ -418,31 +423,19 @@ const CGFloat kTabBarheight        = 49.0;
     
     if (aTitle.length > 0)
     {
-        NSString * titleStr = aTitle;
-        if ([titleStr length] < 3)
-        {
-            titleStr = [NSString stringWithFormat:@"     %@",aTitle];
-        }
-        
-        [leftBarButtonItem setTitle:titleStr];
+        [leftBarButtonItem setTitle:aTitle];
         
         NSMutableDictionary *titleTextAttributes = [[NSMutableDictionary alloc] init];
         [titleTextAttributes setObject:[UIFont systemFontOfSize:15] forKey:NSFontAttributeName];
-        [titleTextAttributes setObject:[UIColor whiteColor] forKey:NSForegroundColorAttributeName];
+        [titleTextAttributes setObject:[UIColor colorWithHex:0x333333] forKey:NSForegroundColorAttributeName];
         [leftBarButtonItem setTitleTextAttributes:titleTextAttributes forState:UIControlStateNormal];
     }
     
     if (aImage)
     {
-        //        [leftBarButtonItem setBackgroundImage:aImage forState:UIControlStateNormal barMetrics:UIBarMetricsCompactPrompt];
         [leftBarButtonItem setImage:aImage];
     }
-    
-    if (hImage)
-    {
-        //        [leftBarButtonItem setBackgroundImage:hImage forState:UIControlStateHighlighted barMetrics:UIBarMetricsCompactPrompt];
-    }
-    
+
     UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
                                                                                     target:nil
                                                                                     action:nil];

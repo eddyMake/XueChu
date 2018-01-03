@@ -26,7 +26,7 @@
     
     NSLog(@"%@",SERVER_DATA_B);
     
-    [self setUpRootControllerWithIsTaBarController:NO];
+    [self setUpRootControllerWithIsTaBarController:YES];
     
     return YES;
 }

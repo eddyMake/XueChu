@@ -20,6 +20,7 @@
  */
 @property (nonatomic, strong) UIView *mainContentView;
 
+@property (nonatomic, strong) UIColor *navTitleColor;
 
 /**
  *  是否显示导航栏，默认YES显示导航栏，如果不显示导航栏，则在子类中重写

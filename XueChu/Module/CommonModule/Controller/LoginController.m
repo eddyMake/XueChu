@@ -9,6 +9,9 @@
 #import "LoginController.h"
 #import "LoginMainView.h"
 
+#import "LoginMainController.h"
+#import "RegisterMainController.h"
+
 @interface LoginController ()
 
 @property (nonatomic, strong) LoginMainView *mainview;
@@ -69,12 +72,19 @@
 
 - (void)loginBtn:(UIButton *)sender
 {
+    LoginMainController *ctl = [[LoginMainController alloc] init];
     
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:ctl];
+    [nav.navigationBar setTranslucent:NO];
+    
+    [self.navigationController presentViewController:nav animated:YES completion:nil];
 }
 
 - (void)registerBtn:(UIButton *)sender
 {
+    RegisterMainController *ctl = [[RegisterMainController alloc] init];
     
+    [self.navigationController pushViewController:ctl animated:YES];
 }
 
 - (void)weChatLoginBtn:(UIButton *)sender
