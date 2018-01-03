@@ -1,0 +1,114 @@
+//
+//  NotificationNameDefine.m
+//  Baihua
+//
+//  Created by Lin on 15/7/21.
+//  Copyright (c) 2015年 KuGou. All rights reserved.
+//
+
+#import "NotificationNameDefine.h"
+
+
+
+#pragma mark - ******** 外链
+
+// 点击外链分享提示，通知登录页是否弹窗
+NSString * const OUTSIDE_CHAIN_PROMPT_UI = @"OUTSIDE_CHAIN_PROMPT_UI";
+
+#pragma mark - ******** 推送
+
+
+// 消息推送处理
+NSString * const PUSH_RESPONSE_UI    = @"PUSH_RESPONSE_UI";
+
+#pragma mark - ******** 账号相关
+
+//登陆服务器
+NSString * const LOGIN_SERVER_RESPONSE    = @"LOGIN_SERVER_RESPONSE";
+NSString * const LOGIN_SERVER_RESPONSE_UI = @"LOGIN_SERVER_RESPONSE_UI";
+
+//帐号登出
+NSString * const  LOGOUT_ACCOUNT    = @"LOGOUT_ACCOUNT";
+NSString * const  LOGOUT_ACCOUNT_UI = @"LOGOUT_ACCOUNT_UI";
+
+//重新登录
+NSString * const LOGIN_AGAIN = @"LOGIN_AGAIN";
+//自动登录失败
+NSString * const AUTOLOGINERROR = @"AUTOLOGINERROR";
+
+//注册成功后自动登录
+NSString * const  REGISTER_SUCCESS_AUTOLOGIN_UI = @"REGISTER_SUCCESS_AUTOLOGIN_UI";
+
+//登录界面隐藏键盘
+NSString * const  HIDEKEYBOARD_INLOGINVIEWCONTROLLER_UI = @"HIDEKEYBOARD_INLOGINVIEWCONTROLLER_UI";
+
+//关注界面跳转至引导搜索界面
+NSString * const  FOCUSVIEW_TO_GUIDEVIEW_UI = @"FOCUSVIEW_TO_GUIDEVIEW_UI";
+
+//引导搜索界面跳转至关注界面
+NSString * const  GUIDEVIEW_TO_FOCUSVIEW_UI = @"GUIDEVIEW_TO_FOCUSVIEW_UI";
+
+// 账户变动
+NSString * const  ACCOUNT_CHANGED    = @"ACCOUNT_CHANGED";
+NSString * const  ACCOUNT_CHANGED_UI = @"ACCOUNT_CHANGED_UI";
+
+//注册register
+NSString * const  REGISTER_SERVER_RESPONSE    = @"REGISTER_SERVER_RESPONSE";
+NSString * const  REGISTER_SERVER_RESPONSE_UI = @"REGISTER_SERVER_RESPONSE_UI";
+
+NSString * const  GETVERIFY_REGISTER_SERVER_RESPONSE    = @"GETVERIFY_REGISTER_SERVER_RESPONSE";
+NSString * const  GETVERIFY_REGISTER_SERVER_RESPONSE_UI = @"GETVERIFY_REGISTER_SERVER_RESPONSE_UI";
+
+//忘记密码
+NSString * const  FORGETPWD_SERVER_RESPONSE    = @"FORGETPWD_SERVER_RESPONSE";
+NSString * const  FORGETPWD_SERVER_RESPONSE_UI = @"FORGETPWD_SERVER_RESPONSE_UI";
+
+NSString * const  GETVERIFY_FORGETPWD_SERVER_RESPONSE    = @"GETVERIFY_FORGETPWD_SERVER_RESPONSE";
+NSString * const  GETVERIFY_FORGETPWD_SERVER_RESPONSE_UI = @"GETVERIFY_FORGETPWD_SERVER_RESPONSE_UI";
+
+
+#pragma mark - ******** 订阅
+
+// 清除文章内容缓存
+NSString * const CLEAN_ARTICLES_CONTENT_CACHE_RESPONSE_UI = @"CLEAN_ARTICLES_CONTENT_CACHE_RESPONSE_UI";
+
+#pragma mark - ******** 关注
+
+//当作者的文章被赞 评论时 更新作者页面的数据
+NSString * const UPDATE_AUTHOR_ARTICLE_DATA = @"UPDATE_AUTHOR_ARTICLE_DATA";
+
+// 关注列表变化
+NSString * const FOCUSNUMBER_CHANGE = @"FOCUSNUMBER_CHANGE";
+
+// 添加订阅跳转
+NSString * const ADD_SUBSCRIBE_JUMP_UI = @"ADD_SUBSCRIBE_JUMP_UI";
+
+//未读数
+NSString * const UNREAD_MESSAGE_COUNT = @"UNREAD_MESSAGE_COUNT";
+
+// 添加关注
+NSString * const SUBSCRIBE_AUTHOR_RESPONSE_UI    = @"SUBSCRIBE_AUTHOR_RESPONSE_UI";
+
+// 取消关注
+NSString * const UNSUBSCRIBE_AUTHOR_RESPONSE_UI = @"UNSUBSCRIBE_AUTHOR_RESPONSE_UI";
+
+
+#pragma mark - ******** 支付
+
+//支付结果
+NSString * const PAYRESULT = @"PAYRESULT";
+
+
+//微信支付 支付宝提交并获取信息
+NSString * const PAYCOMMIT_GET_RESULTINFO = @"PAYCOMMIT_GET_RESULTINFO";
+
+//支付成功之后返回群组信息
+NSString * const PAYSUCCESS_GET_GROUPINFO = @"PAYSUCCESS_GET_GROUPINFO";
+
+NSString * const PUSH_NOTICETYPE_REPLAY_COMMENT = @"PUSH_NOTICETYPE_REPLAY_COMMENT";
+NSString * const PUSH_NOTICETYPE_SYSTEMNOTICE = @"PUSH_NOTICETYPE_SYSTEMNOTICE";
+
+#pragma mark - ******** 消息 照片
+//需要发送的相册照片数据
+NSString * const SEND_ALBUM_PHOTO_RESPONSE_UI = @"SEND_ALBUM_PHOTO_RESPONSE_UI";
+

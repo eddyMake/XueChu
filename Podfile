@@ -9,7 +9,8 @@ target ‘XueChu’ do
    pod 'IQKeyboardManager'
    pod 'UITableView+FDTemplateLayoutCell'
    pod 'RDVTabBarController'
-
+   pod 'MJRefresh'
+   
     #网络
    pod 'AFNetworking'
    pod 'SDWebImage'
