@@ -10,6 +10,7 @@
 #import "CustomTaBarController.h"
 #import "BaseNavigationController.h"
 #import "LoginController.h"
+#import "AppDelegate+Helper.h"
 
 @interface AppDelegate ()
 
@@ -26,7 +27,8 @@
     
     NSLog(@"%@",SERVER_DATA_B);
     
-    [self setUpRootControllerWithIsTaBarController:YES];
+    [self configGlobalKeyboardManager];
+    [self setUpRootControllerWithIsTaBarController:NO];
     
     return YES;
 }

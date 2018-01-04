@@ -174,7 +174,7 @@ const CGFloat kTabBarheight        = 49.0;
     
     if ([self customBackgroundImage] == nil)
     {
-        _mainContentView.backgroundColor = [UIColor grayColor];
+        _mainContentView.backgroundColor = [UIColor whiteColor];
     }
     
     [view addSubview:self.mainContentView];
@@ -257,7 +257,7 @@ const CGFloat kTabBarheight        = 49.0;
         
         if ([self customBackgroundImage] == nil)
         {
-            _mainContentView.backgroundColor = [UIColor grayColor];
+            _mainContentView.backgroundColor = [UIColor whiteColor];
         }
     }
     

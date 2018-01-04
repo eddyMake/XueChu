@@ -7,14 +7,14 @@
 //
 
 #import "LoginController.h"
-#import "LoginMainView.h"
+#import "LoginAndRegisterView.h"
 
 #import "LoginMainController.h"
 #import "RegisterMainController.h"
 
 @interface LoginController ()
 
-@property (nonatomic, strong) LoginMainView *mainview;
+@property (nonatomic, strong) LoginAndRegisterView *mainview;
 
 @end
 
@@ -52,7 +52,7 @@
 {
     if (_mainview == nil)
     {
-        _mainview = [[LoginMainView alloc] initWithFrame:self.mainContentViewFrame];
+        _mainview = [[LoginAndRegisterView alloc] initWithFrame:self.mainContentViewFrame];
     }
     
     return _mainview;

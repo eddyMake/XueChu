@@ -53,11 +53,11 @@
 // 一天前的时间(24小时前)
 - (NSDate *)dayBeforeDate
 {
-    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     
     NSDateComponents *components = nil;
     
-    components = [calendar components:NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit
+    components = [calendar components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay
                              fromDate:self];
     
     NSDateComponents *dayBeforeComponents = [NSDateComponents new];
@@ -147,16 +147,6 @@
         dateStr = [self stringValueWithFormatString:@"yyyy年MM月dd日"];
     }
     
-#warning 此处需要加入12小时制处理
-    if (hasAMPM)
-    {
-        
-    }
-    else
-    {
-        
-    }
-    
     return dateStr;
 }
 
@@ -215,16 +205,6 @@
         dateStr = [self stringValueWithFormatString:@"yy-MM-dd HH:mm"];
     }
     
-#warning 此处需要加入12小时制处理
-    if (hasAMPM)
-    {
-        
-    }
-    else
-    {
-        
-    }
-    
     return dateStr;
 }
 
@@ -281,16 +261,6 @@
     else
     {
         dateStr = [self stringValueWithFormatString:@"yyyy年MM月dd日"];
-    }
-    
-#warning 此处需要加入12小时制处理
-    if (hasAMPM)
-    {
-        
-    }
-    else
-    {
-        
     }
     
     return dateStr;

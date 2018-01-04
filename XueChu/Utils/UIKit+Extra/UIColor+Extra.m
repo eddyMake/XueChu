@@ -64,7 +64,7 @@
 //统一底部大按钮颜色
 + (UIColor *)normalButtonColor
 {
-    return [UIColor colorWithHexColorString:@"0xbbbbbb"];
+    return [UIColor colorWithHexColorString:@"0xf4a929"];
 }
 
 //分割线描边 （较灰）
@@ -94,13 +94,13 @@
 //主要字体色 （较黑）
 + (UIColor *)fontBlackColor
 {
-    return [UIColor colorWithHexColorString:@"0x181a19"];
+    return [UIColor colorWithHexColorString:@"0x333333"];
 }
 
 //次要字体色 （小黑）
 + (UIColor *)fontDarkBlackColor
 {
-    return [UIColor colorWithHexColorString:@"0x747575"];
+    return [UIColor colorWithHexColorString:@"0xadadad"];
 }
 
 //提示字体色 （浅灰）
