@@ -43,8 +43,9 @@
     }
     else
     {
-        BaseNavigationController *rootController = [[BaseNavigationController alloc] initWithRootViewController:[[LoginController alloc] init]];
-        
+        UINavigationController *rootController = [[UINavigationController alloc] initWithRootViewController:[[LoginController alloc] init]];
+        [rootController.navigationBar setTranslucent:NO];
+
         [self.window setRootViewController:rootController];
     }
 }

@@ -19,6 +19,9 @@
 		6468199E1FFDBE0D00D173DF /* LoginAndRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6468199D1FFDBE0D00D173DF /* LoginAndRegisterView.m */; };
 		646819A11FFDDB3200D173DF /* UIButton+EdgeInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 6468199F1FFDDB3200D173DF /* UIButton+EdgeInsets.m */; };
 		646819A41FFDDE0400D173DF /* AppDelegate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 646819A31FFDDE0400D173DF /* AppDelegate+Helper.m */; };
+		646819A71FFDF97A00D173DF /* RegisterMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 646819A61FFDF97A00D173DF /* RegisterMainView.m */; };
+		646819AA1FFDFC1600D173DF /* PhoneCapchaButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 646819A91FFDFC1600D173DF /* PhoneCapchaButton.m */; };
+		646819AD1FFDFC6700D173DF /* NSTimer+BlockSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 646819AC1FFDFC6700D173DF /* NSTimer+BlockSupport.m */; };
 		64789ECA1FFCA69D007B6FF6 /* NetWorkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 64789EC91FFCA69D007B6FF6 /* NetWorkEngine.m */; };
 		64789ECD1FFCAB56007B6FF6 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64789ECC1FFCAB56007B6FF6 /* LoginController.m */; };
 		64789ED01FFCAE24007B6FF6 /* LoginMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64789ECF1FFCAE24007B6FF6 /* LoginMainView.m */; };
@@ -87,6 +90,12 @@
 		646819A01FFDDB3200D173DF /* UIButton+EdgeInsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+EdgeInsets.h"; sourceTree = "<group>"; };
 		646819A21FFDDE0400D173DF /* AppDelegate+Helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Helper.h"; sourceTree = "<group>"; };
 		646819A31FFDDE0400D173DF /* AppDelegate+Helper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Helper.m"; sourceTree = "<group>"; };
+		646819A51FFDF97A00D173DF /* RegisterMainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterMainView.h; sourceTree = "<group>"; };
+		646819A61FFDF97A00D173DF /* RegisterMainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterMainView.m; sourceTree = "<group>"; };
+		646819A81FFDFC1600D173DF /* PhoneCapchaButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhoneCapchaButton.h; sourceTree = "<group>"; };
+		646819A91FFDFC1600D173DF /* PhoneCapchaButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhoneCapchaButton.m; sourceTree = "<group>"; };
+		646819AB1FFDFC6600D173DF /* NSTimer+BlockSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+BlockSupport.h"; sourceTree = "<group>"; };
+		646819AC1FFDFC6700D173DF /* NSTimer+BlockSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+BlockSupport.m"; sourceTree = "<group>"; };
 		64789EC71FFCA68D007B6FF6 /* CommonUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUtility.h; sourceTree = "<group>"; };
 		64789EC81FFCA69D007B6FF6 /* NetWorkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkEngine.h; sourceTree = "<group>"; };
 		64789EC91FFCA69D007B6FF6 /* NetWorkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkEngine.m; sourceTree = "<group>"; };
@@ -214,6 +223,8 @@
 				6468199D1FFDBE0D00D173DF /* LoginAndRegisterView.m */,
 				64789ECE1FFCAE24007B6FF6 /* LoginMainView.h */,
 				64789ECF1FFCAE24007B6FF6 /* LoginMainView.m */,
+				646819A51FFDF97A00D173DF /* RegisterMainView.h */,
+				646819A61FFDF97A00D173DF /* RegisterMainView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -313,6 +324,8 @@
 				64789EC71FFCA68D007B6FF6 /* CommonUtility.h */,
 				64CAAF371FFC79300084DE0B /* CustomTextAttachment.h */,
 				64CAAF381FFC79300084DE0B /* CustomTextAttachment.m */,
+				646819A81FFDFC1600D173DF /* PhoneCapchaButton.h */,
+				646819A91FFDFC1600D173DF /* PhoneCapchaButton.m */,
 				64CAAF391FFC79300084DE0B /* Foundation+Extra */,
 				64CAAF431FFC79300084DE0B /* NotificationNameDefine.h */,
 				64CAAF441FFC79300084DE0B /* NotificationNameDefine.m */,
@@ -326,6 +339,8 @@
 			isa = PBXGroup;
 			children = (
 				64CAAF3A1FFC79300084DE0B /* Foundation+Extra.h */,
+				646819AB1FFDFC6600D173DF /* NSTimer+BlockSupport.h */,
+				646819AC1FFDFC6700D173DF /* NSTimer+BlockSupport.m */,
 				64CAAF3B1FFC79300084DE0B /* NSDate+Extra.h */,
 				64CAAF3C1FFC79300084DE0B /* NSDate+Extra.m */,
 				64CAAF3D1FFC79300084DE0B /* NSDictionary+Extra.h */,
@@ -750,6 +765,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				64CAAF5F1FFC79310084DE0B /* NotificationNameDefine.m in Sources */,
+				646819A71FFDF97A00D173DF /* RegisterMainView.m in Sources */,
+				646819AA1FFDFC1600D173DF /* PhoneCapchaButton.m in Sources */,
 				64CAAF651FFC79310084DE0B /* UIImage+Extra.m in Sources */,
 				64CAAF321FFC6AB40084DE0B /* MineController.m in Sources */,
 				64789ED01FFCAE24007B6FF6 /* LoginMainView.m in Sources */,
@@ -778,6 +795,7 @@
 				64CAAF5C1FFC79310084DE0B /* NSDictionary+Extra.m in Sources */,
 				64EF423A1FFB939A00AAB7E1 /* BaseTableViewCell.m in Sources */,
 				64CAAF2C1FFC6A9A0084DE0B /* CookBookController.m in Sources */,
+				646819AD1FFDFC6700D173DF /* NSTimer+BlockSupport.m in Sources */,
 				64789ECA1FFCA69D007B6FF6 /* NetWorkEngine.m in Sources */,
 				64789ED31FFCCCAC007B6FF6 /* LoginMainController.m in Sources */,
 				6439808B1FFB6789000B0EB3 /* main.m in Sources */,
