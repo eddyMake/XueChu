@@ -13,6 +13,7 @@
 #import "UIView+Extra.h"
 #import "UIColor+Extra.h"
 #import "UIImage+Extra.h"
+#import "UIView+Utils.h"
 #import "UITextView+Placeholder.h"
 #import "UIButton+EdgeInsets.h"
 

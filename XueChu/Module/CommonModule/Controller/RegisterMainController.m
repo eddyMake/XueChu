@@ -9,6 +9,8 @@
 #import "RegisterMainController.h"
 #import "RegisterMainView.h"
 
+#import "SelectBirthdayController.h"
+
 @interface RegisterMainController ()
 
 @property (nonatomic, strong) RegisterMainView *mainview;
@@ -59,12 +61,14 @@
 
 - (void)registerBtn:(id)sender
 {
-
+    SelectBirthdayController *ctl = [[SelectBirthdayController alloc] init];
+    
+    [self presentViewController:ctl animated:YES completion:nil];
 }
 
 - (void)agreeBtn:(UIButton *)sender
 {
-    
+
 }
 
 

@@ -27,10 +27,21 @@
     
     NSLog(@"%@",SERVER_DATA_B);
     
+    [self registerNotifications];
     [self configGlobalKeyboardManager];
     [self setUpRootControllerWithIsTaBarController:NO];
     
     return YES;
+}
+
+- (void)registerNotifications
+{
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loginSuccessNotification:) name:LOGIN_SERVER_RESPONSE_UI object:nil];
+}
+
+- (void)loginSuccessNotification:(NSNotification *)aNotification
+{
+    [self setUpRootControllerWithIsTaBarController:YES];
 }
 
 - (void)setUpRootControllerWithIsTaBarController:(BOOL)isTaBarController

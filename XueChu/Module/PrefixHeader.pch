@@ -22,5 +22,6 @@
 
 #import "Global.h"
 #import "API.h"
+#import "NotificationNameDefine.h"
 
 #endif /* PrefixHeader_pch */

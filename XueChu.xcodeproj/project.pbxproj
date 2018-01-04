@@ -22,6 +22,8 @@
 		646819A71FFDF97A00D173DF /* RegisterMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 646819A61FFDF97A00D173DF /* RegisterMainView.m */; };
 		646819AA1FFDFC1600D173DF /* PhoneCapchaButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 646819A91FFDFC1600D173DF /* PhoneCapchaButton.m */; };
 		646819AD1FFDFC6700D173DF /* NSTimer+BlockSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 646819AC1FFDFC6700D173DF /* NSTimer+BlockSupport.m */; };
+		646819B01FFE0A0800D173DF /* SelectBirthdayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 646819AF1FFE0A0800D173DF /* SelectBirthdayController.m */; };
+		646819B31FFE0D6F00D173DF /* SelectAddressController.m in Sources */ = {isa = PBXBuildFile; fileRef = 646819B21FFE0D6F00D173DF /* SelectAddressController.m */; };
 		64789ECA1FFCA69D007B6FF6 /* NetWorkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 64789EC91FFCA69D007B6FF6 /* NetWorkEngine.m */; };
 		64789ECD1FFCAB56007B6FF6 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64789ECC1FFCAB56007B6FF6 /* LoginController.m */; };
 		64789ED01FFCAE24007B6FF6 /* LoginMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64789ECF1FFCAE24007B6FF6 /* LoginMainView.m */; };
@@ -96,6 +98,10 @@
 		646819A91FFDFC1600D173DF /* PhoneCapchaButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhoneCapchaButton.m; sourceTree = "<group>"; };
 		646819AB1FFDFC6600D173DF /* NSTimer+BlockSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+BlockSupport.h"; sourceTree = "<group>"; };
 		646819AC1FFDFC6700D173DF /* NSTimer+BlockSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+BlockSupport.m"; sourceTree = "<group>"; };
+		646819AE1FFE0A0800D173DF /* SelectBirthdayController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectBirthdayController.h; sourceTree = "<group>"; };
+		646819AF1FFE0A0800D173DF /* SelectBirthdayController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectBirthdayController.m; sourceTree = "<group>"; };
+		646819B11FFE0D6F00D173DF /* SelectAddressController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectAddressController.h; sourceTree = "<group>"; };
+		646819B21FFE0D6F00D173DF /* SelectAddressController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectAddressController.m; sourceTree = "<group>"; };
 		64789EC71FFCA68D007B6FF6 /* CommonUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUtility.h; sourceTree = "<group>"; };
 		64789EC81FFCA69D007B6FF6 /* NetWorkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkEngine.h; sourceTree = "<group>"; };
 		64789EC91FFCA69D007B6FF6 /* NetWorkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkEngine.m; sourceTree = "<group>"; };
@@ -238,6 +244,10 @@
 				64789ED21FFCCCAC007B6FF6 /* LoginMainController.m */,
 				64789ED41FFCD66C007B6FF6 /* RegisterMainController.h */,
 				64789ED51FFCD66C007B6FF6 /* RegisterMainController.m */,
+				646819AE1FFE0A0800D173DF /* SelectBirthdayController.h */,
+				646819AF1FFE0A0800D173DF /* SelectBirthdayController.m */,
+				646819B11FFE0D6F00D173DF /* SelectAddressController.h */,
+				646819B21FFE0D6F00D173DF /* SelectAddressController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -326,10 +336,10 @@
 				64CAAF381FFC79300084DE0B /* CustomTextAttachment.m */,
 				646819A81FFDFC1600D173DF /* PhoneCapchaButton.h */,
 				646819A91FFDFC1600D173DF /* PhoneCapchaButton.m */,
-				64CAAF391FFC79300084DE0B /* Foundation+Extra */,
 				64CAAF431FFC79300084DE0B /* NotificationNameDefine.h */,
 				64CAAF441FFC79300084DE0B /* NotificationNameDefine.m */,
 				64CAAF4B1FFC79300084DE0B /* SystemTypeDef.h */,
+				64CAAF391FFC79300084DE0B /* Foundation+Extra */,
 				64CAAF4E1FFC79300084DE0B /* UIKit+Extra */,
 			);
 			path = Utils;
@@ -764,6 +774,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				646819B31FFE0D6F00D173DF /* SelectAddressController.m in Sources */,
 				64CAAF5F1FFC79310084DE0B /* NotificationNameDefine.m in Sources */,
 				646819A71FFDF97A00D173DF /* RegisterMainView.m in Sources */,
 				646819AA1FFDFC1600D173DF /* PhoneCapchaButton.m in Sources */,
@@ -784,6 +795,7 @@
 				64CAAF661FFC79310084DE0B /* UITextView+Placeholder.m in Sources */,
 				64CAAF351FFC6ABF0084DE0B /* CategoryController.m in Sources */,
 				64CAAF2F1FFC6AA90084DE0B /* FindController.m in Sources */,
+				646819B01FFE0A0800D173DF /* SelectBirthdayController.m in Sources */,
 				64EF42311FFB933F00AAB7E1 /* BaseView.m in Sources */,
 				64EF422B1FFB928600AAB7E1 /* BaseController.m in Sources */,
 				64CAAF641FFC79310084DE0B /* UIColor+Extra.m in Sources */,

@@ -111,13 +111,13 @@
 //提示字体色 （浅灰）
 + (UIColor *)fontLightBlackColor
 {
-    return [UIColor colorWithHexColorString:@"a8a9a9"];
+    return [UIColor colorWithHexColorString:@"0xa8a9a9"];
 }
 
 //系统灰
 + (UIColor *)fontGrayColor
 {
-    return  [UIColor grayColor];
+    return  [UIColor colorWithHexColorString:@"0x333333"];
 }
 
 @end

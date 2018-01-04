@@ -174,7 +174,7 @@
         [_registerBtn.titleLabel setFont:[UIFont systemFontOfSize:18]];
         [_registerBtn.layer setCornerRadius:5];
         [_registerBtn.layer setMasksToBounds:YES];
-        [_registerBtn setEnabled:NO];
+//        [_registerBtn setEnabled:NO];
         
         [self addSubview:_registerBtn];
         
