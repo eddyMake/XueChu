@@ -21,11 +21,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions 
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
-    [self.window makeKeyAndVisible];
-    
     NSLog(@"%@",SERVER_DATA_B);
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [self.window makeKeyAndVisible];
     
     [self registerNotifications];
     [self configGlobalKeyboardManager];
