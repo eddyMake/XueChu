@@ -22,35 +22,40 @@
 {
     if (self = [super initWithFrame:frame])
     {
-        self.titleLabel.font = [UIFont boldSystemFontOfSize:12.0f];
-        self.enabled = YES;
-        self.layer.masksToBounds = YES;
-        self.layer.cornerRadius = 2.0f;
-        self.backgroundColor= [UIColor mainColor];
+        [self setTitle:@"获取验证码" forState:UIControlStateNormal];
+        [self.titleLabel setFont:[UIFont boldSystemFontOfSize:13.0f]];
+        [self setEnabled:NO];
+        [self.layer setMasksToBounds:YES];
+        [self.layer setCornerRadius:4.0f];
     }
     return self;
 }
 
-
 - (void)setEnabled:(BOOL)enabled
 {
     [super setEnabled:enabled];
-    [self setBackgroundImage:createImageWithColor([UIColor lightGrayColor]) forState:UIControlStateDisabled];
+    [self setBackgroundImage:createImageWithColor([UIColor enableButtonColor]) forState:UIControlStateDisabled];
     [self setBackgroundImage:createImageWithColor([UIColor mainColor]) forState:UIControlStateNormal];
     [self setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    if (enabled) {
+    
+    if (enabled)
+    {
         [self setTitle:@"获取验证码" forState:UIControlStateNormal];
-    } else if ([self.titleLabel.text isEqualToString:@""]) {
+    }
+    else if ([self.titleLabel.text isEqualToString:@""])
+    {
         [self setTitle:@"正在发送..." forState:UIControlStateNormal];
     }
 }
 
 - (void)awakeFromNib
 {
+    [super awakeFromNib];
+    
     self.enabled = self.isEnabled;
 }
 
-#pragma mark - Public Method
+#pragma mark - ********* 事件
 
 - (void)startTimer
 {

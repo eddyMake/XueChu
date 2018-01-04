@@ -28,6 +28,9 @@
 //统一底部大按钮颜色
 + (UIColor *)normalButtonColor;
 
+//不可交互按钮颜色
++ (UIColor *)enableButtonColor;
+
 //一般灰
 + (UIColor *)normalGrayColor;
 

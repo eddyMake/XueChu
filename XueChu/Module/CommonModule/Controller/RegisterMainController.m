@@ -23,6 +23,8 @@
     [self setTitle:@"注册"];
     [self showCustomNavigationBackButton];
     [self setNavTitleColor:[UIColor colorWithHex:0x333333]];
+    
+    [self setUpUserInterface];
 }
 
 #pragma mark - ********** UI
@@ -42,11 +44,18 @@
     [self.mainview accountTf];
     [self.mainview passwordTf];
     [self.mainview codeTf];
+    [self.mainview.capchaBtn addTarget:self action:@selector(capchaBtn:) forControlEvents:UIControlEventTouchUpInside];
+
     [self.mainview.registerBtn addTarget:self action:@selector(registerBtn:) forControlEvents:UIControlEventTouchUpInside];
     [self.mainview.agreeBtn addTarget:self action:@selector(agreeBtn:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 #pragma mark - ********** 事件
+
+- (void)capchaBtn:(id)sender
+{
+    
+}
 
 - (void)registerBtn:(id)sender
 {

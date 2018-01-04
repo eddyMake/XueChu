@@ -52,8 +52,9 @@
     [self addSubview:line];
     
     [line makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.bottom.equalTo(textField);
+        make.left.bottom.equalTo(textField);
         make.height.equalTo(@0.5);
+        make.right.equalTo(self).offset(-15);
     }];
 }
 
@@ -72,12 +73,30 @@
         [_accountTf makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(self).offset(15);
             make.top.equalTo(self).offset(32);
-            make.right.equalTo(self).offset(-15);
             make.height.mas_equalTo(40);
         }];
     }
     
     return _accountTf;
+}
+
+- (PhoneCapchaButton *)capchaBtn
+{
+    if (_capchaBtn == nil)
+    {
+        _capchaBtn = [[PhoneCapchaButton alloc] initWithFrame:CGRectZero];
+        
+        [self addSubview:_capchaBtn];
+        
+        [_capchaBtn makeConstraints:^(MASConstraintMaker *make) {
+            make.size.mas_equalTo(CGSizeMake(80, 30));
+            make.centerY.equalTo(self.accountTf);
+            make.right.equalTo(self).offset(-15);
+            make.left.equalTo(self.accountTf.right).offset(5);
+        }];
+    }
+    
+    return _capchaBtn;
 }
 
 - (UITextField *)passwordTf
@@ -94,7 +113,8 @@
         
         [_passwordTf makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.accountTf.bottom).offset(22);
-            make.height.left.right.equalTo(self.accountTf);
+            make.height.left.equalTo(self.accountTf);
+            make.right.equalTo(self).offset(-15);
         }];
     }
     
@@ -115,7 +135,8 @@
         
         [_codeTf makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.passwordTf.bottom).offset(22);
-            make.height.left.right.equalTo(self.accountTf);
+            make.height.left.equalTo(self.accountTf);
+            make.right.equalTo(self).offset(-15);
         }];
     }
     
@@ -146,12 +167,14 @@
     if (_registerBtn == nil)
     {
         _registerBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_registerBtn setBackgroundColor:[UIColor normalButtonColor]];
+        [_registerBtn setBackgroundImage:[UIImage imageWithColor:[UIColor normalButtonColor]] forState:UIControlStateNormal];
+        [_registerBtn setBackgroundImage:[UIImage imageWithColor:[UIColor enableButtonColor]] forState:UIControlStateDisabled];
         [_registerBtn setTitle:@"注册" forState:UIControlStateNormal];
         [_registerBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_registerBtn.titleLabel setFont:[UIFont systemFontOfSize:18]];
         [_registerBtn.layer setCornerRadius:5];
         [_registerBtn.layer setMasksToBounds:YES];
+        [_registerBtn setEnabled:NO];
         
         [self addSubview:_registerBtn];
         

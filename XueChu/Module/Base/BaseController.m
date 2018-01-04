@@ -300,7 +300,7 @@ const CGFloat kTabBarheight        = 49.0;
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     
-    BLTLog(@"%@~~~~~~~~~~~~~~~~~~dealloc~~",[self class]);
+    NSLog(@"%@~~~~~~~~~~~~~~~~~~dealloc~~",NSStringFromClass([self class]));
 }
 
 - (void)viewWillAppear:(BOOL)animated

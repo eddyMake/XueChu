@@ -67,6 +67,11 @@
     return [UIColor colorWithHexColorString:@"0xf4a929"];
 }
 
++ (UIColor *)enableButtonColor
+{
+    return [UIColor colorWithHexColorString:@"0xd0d3dd"];
+}
+
 //分割线描边 （较灰）
 + (UIColor *)lineColor
 {
