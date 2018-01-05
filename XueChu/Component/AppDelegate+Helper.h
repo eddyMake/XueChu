@@ -12,4 +12,6 @@
 
 - (void)configGlobalKeyboardManager;
 
+- (void)configRootController;
+
 @end

@@ -7,9 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "CustomTaBarController.h"
-#import "BaseNavigationController.h"
-#import "LoginController.h"
 #import "AppDelegate+Helper.h"
 
 @interface AppDelegate ()
@@ -26,39 +23,12 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window makeKeyAndVisible];
     
-    [self registerNotifications];
     [self configGlobalKeyboardManager];
-    [self setUpRootControllerWithIsTaBarController:NO];
+    [self configRootController];
     
     return YES;
 }
 
-- (void)registerNotifications
-{
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loginSuccessNotification:) name:LOGIN_SERVER_RESPONSE_UI object:nil];
-}
-
-- (void)loginSuccessNotification:(NSNotification *)aNotification
-{
-    [self setUpRootControllerWithIsTaBarController:YES];
-}
-
-- (void)setUpRootControllerWithIsTaBarController:(BOOL)isTaBarController
-{
-    if (isTaBarController)
-    {
-        CustomTaBarController *rootController = [[CustomTaBarController alloc] init];
-        
-        [self.window setRootViewController:rootController];
-    }
-    else
-    {
-        UINavigationController *rootController = [[UINavigationController alloc] initWithRootViewController:[[LoginController alloc] init]];
-        [rootController.navigationBar setTranslucent:NO];
-
-        [self.window setRootViewController:rootController];
-    }
-}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
