@@ -22,6 +22,15 @@
 #define isScreen4_7Inch ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(kScreen4_7InchSize, [[UIScreen mainScreen] currentMode].size) : NO)
 #define isScreen5_5Inch ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(kScreen5_5InchSize, [[UIScreen mainScreen] currentMode].size) : NO)
 
+#define SCREEN_MAX_LENGTH MAX(kScreenWidth,kScreenHeight)
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define IS_IPHONE_X (IS_IPHONE && SCREEN_MAX_LENGTH == 812.0)
+
+#define kStatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
+#define kNavBarHeight 44.0
+#define kTopHeight (kStatusBarHeight + kNavBarHeight)
+#define kTabBarHeight (kStatusBarHeight > 20 ? 83 : 49)
+
 // 日志输出
 #ifdef DEBUG
 #   define BLTLog(fmt, ...) {NSLog((@"[Line %d] " fmt), __LINE__, ##__VA_ARGS__);}

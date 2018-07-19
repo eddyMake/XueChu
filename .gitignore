@@ -1,22 +1,15 @@
-# OS X
 .DS_Store
-XueChu/.DS_Store
-
-# *.xccheckout
-学厨B/XueChu.xcodeproj/project.xcworkspace/xcuserdata/*.xcuserdatad/*
-
-# Dir
-XueChu/Pods/
-XueChu/IPA/
-XueChu/build/
-
-*.xcarchive
-builds/*
-.history
-
-# Xcode
-#
 build/
-DerivedData/
-xcuserdata/
-*contents.xcworkspacedata
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.xcuserstate

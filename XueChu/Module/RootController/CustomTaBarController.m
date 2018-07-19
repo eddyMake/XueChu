@@ -54,9 +54,10 @@
                                ]];
     
     //tabBar
-    [[self tabBar] setHeight:50];
+    [[self tabBar] setHeight:kTabBarHeight];
+    [self.tabBar setContentEdgeInsets:UIEdgeInsetsMake(IS_IPHONE_X ? 10 : 0, 0, 0, 0)];
     [self tabBar].backgroundView .backgroundColor = [UIColor whiteColor];
-    UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 0.5)];
+    UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 0.5)];
     lineView.backgroundColor =  [UIColor grayColor];
     [[self tabBar].backgroundView addSubview:lineView];
     

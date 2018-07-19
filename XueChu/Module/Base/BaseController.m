@@ -8,10 +8,6 @@
 
 #import "BaseController.h"
 
-const CGFloat kStatusBarheight     = 20.0;
-const CGFloat kNavigationBarheight = 44.0;
-const CGFloat kTabBarheight        = 49.0;
-
 @interface BaseController ()<UIGestureRecognizerDelegate>
 
 @property (nonatomic, strong) UILabel     *titleLabel;
@@ -112,7 +108,7 @@ const CGFloat kTabBarheight        = 49.0;
  */
 - (CGFloat)heightOfNavigationBar
 {
-    return kNavigationBarheight;
+    return kNavBarHeight;
 }
 
 /**
@@ -122,7 +118,7 @@ const CGFloat kTabBarheight        = 49.0;
  */
 - (CGFloat)heightOfBottomTabBar
 {
-    return kTabBarheight;
+    return kTabBarHeight;
 }
 
 /**
@@ -435,7 +431,7 @@ const CGFloat kTabBarheight        = 49.0;
     {
         [leftBarButtonItem setImage:aImage];
     }
-
+    
     UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
                                                                                     target:nil
                                                                                     action:nil];
